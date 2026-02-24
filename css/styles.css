@@ -10112,3 +10112,66 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Cover / Hero section */
+section.cover-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/img/gildas.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+}
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: 1;
+}
+.cover-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+.cover-name {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.cover-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.95;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+@media (min-width: 768px) {
+  section.cover-hero {
+    min-height: 60vh;
+  }
+  .cover-name {
+    font-size: 4rem;
+  }
+  .cover-subtitle {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  section.cover-hero {
+    min-height: 70vh;
+  }
+  .cover-name {
+    font-size: 5rem;
+  }
+}
